@@ -1,0 +1,13 @@
+{% extends 'main/base.html'%}
+
+{% block title %}Oops! 404 Not Found{{ title}}
+{% endblock%}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Oops! 404 Not Found</h1>
+     <p >Кажется, вы пытаетесь найти то, чего нет...пожалуйста проверьте url-адресс или вернитесь на главную страницу </p>
+   <hr class="my-4">
+    <a href="{% url 'home' %}"  class="btn btn-success" role="button">На главную</a>
+</div>
+{% endblock%}

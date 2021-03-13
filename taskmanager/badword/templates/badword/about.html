@@ -1,0 +1,16 @@
+{% extends 'badword/base.html' %}
+
+{% block title %}
+Класификатор
+{% endblock %}
+
+{% block content %}
+        <h3>Введите текст</h3>
+        <form method="post">
+          {% csrf_token %}
+          {{ form.task }}<br>
+           <button type="submit" class="btn btn-success">Добавить</button>
+            <label class="form-label"> {{predict}}</label>
+            <samp>{{error}}</samp>
+        </form>
+{% endblock %}
